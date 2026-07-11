@@ -6,35 +6,32 @@ opacity = 0.8
 normal = { family = "JetBrains Mono", style = "Regular" }
 size = 12
 
-# Colors (PaperColor - Light)
+# Colors (Dracula+)
 
-# Default colors
 [colors.primary]
-background = '#eeeeee'
-foreground = '#444444'
+background = '#212121'
+foreground = '#F8F8F2'
 
 [colors.cursor]
-text = '#eeeeee'
-cursor = '#444444'
+text = '#0E1415'
+cursor = '#ECEFF4'
 
-# Normal colors
 [colors.normal]
-black   = '#eeeeee'
-red     = '#af0000'
-green   = '#008700'
-yellow  = '#5f8700'
-blue    = '#0087af'
-magenta = '#878787'
-cyan    = '#005f87'
-white   = '#444444'
+black = '#21222C'
+red = '#FF5555'
+green = '#50FA7B'
+yellow = '#FFCB6B'
+blue = '#82AAFF'
+magenta = '#C792EA'
+cyan = '#8BE9FD'
+white = '#F8F9F2'
 
-# Bright colors
 [colors.bright]
-black   = '#bcbcbc'
-red     = '#d70000'
-green   = '#d70087'
-yellow  = '#8700af'
-blue    = '#d75f00'
-magenta = '#d75f00'
-cyan    = '#005faf'
-white   = '#005f87'
+black = '#545454'
+red = '#FF6E6E'
+green = '#69FF94'
+yellow = '#FFCB6B'
+blue = '#D6ACFF'
+magenta = '#FF92DF'
+cyan = '#A4FFFF'
+white = '#F8F8F2'
