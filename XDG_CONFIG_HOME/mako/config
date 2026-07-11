@@ -1,6 +1,6 @@
 default-timeout=10000
 border-radius=10
-background-color=#faf8f6
-text-color=#302c2a
-border-color=#d94f1e
+background-color=#171412E8
+text-color=#eee9e5
+border-color=#e56532
 progress-color=over #d94f1e
