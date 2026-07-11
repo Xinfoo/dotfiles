@@ -11,8 +11,8 @@ hl.config({
         border_size = 1,
 
         col = {
-            active_border   = "rgba(d94f1eff)",
-            inactive_border = "rgba(ffffff1a)",
+            active_border   = "rgba(e56532ff)",
+            inactive_border = "rgba(8f817a66)",
         },
 
         -- 设为 true 以允许通过点击拖拽边框和间隙来调整窗口大小
@@ -36,7 +36,7 @@ hl.config({
             enabled      = true,
             range        = 10,
             render_power = 2,
-            color        = 0x66000000,
+            color        = 0x99000000,
         },
 
         blur = {
