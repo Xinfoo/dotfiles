@@ -101,6 +101,13 @@ hl.config({
     },
 })
 
+-- 禁用 Xwayland 在高分屏下的缩放
+hl.config({
+    xwayland = {
+        force_zero_scaling = true
+    }
+})
+
 --------------
 ---- 杂项 ----
 --------------
