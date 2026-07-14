@@ -53,6 +53,16 @@ Intel:
 **Clipboard**
 - wl-clipboard
 
+**Screenshot & Image Viewer**
+- grimblast
+- grim
+- slurp
+- jq
+- gimp
+- swayimg
+
+Grimblast also uses `hyprpicker`, `wl-clipboard`, and `libnotify`, which are listed elsewhere in this section.
+
 **Fonts**
 - noto-fonts
 - noto-fonts-cjk
