@@ -22,6 +22,7 @@ return function(opts)
     hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(app_cmd("~/.config/waybar/launch.sh")))
     hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
     hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- 仅适用于 dwindle 布局
+    hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("~/.config/hypr/scripts/screenshot.sh"))
 
     -- 使用 mainMod + 方向键移动焦点
     hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
@@ -38,8 +39,8 @@ return function(opts)
     end
 
     -- 示例：特殊工作区（便签本）
-    hl.bind(mainMod .. " + S",         hl.dsp.workspace.toggle_special("magic"))
-    hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
+    hl.bind(mainMod .. " + S",       hl.dsp.workspace.toggle_special("magic"))
+    hl.bind(mainMod .. " + ALT + S", hl.dsp.window.move({ workspace = "special:magic" }))
 
     -- 使用 mainMod + 滚轮在现有工作区之间滚动切换
     hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "e+1" }))
