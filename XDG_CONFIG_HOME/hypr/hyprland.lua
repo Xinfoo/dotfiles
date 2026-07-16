@@ -12,7 +12,7 @@ local utils = require("utils")
 ------------------
 
 -- 设置你使用的程序
-local terminal    = "alacritty"
+local terminal    = "kitty"
 local fileManager = "thunar"
 local menu        = "wofi --show drun"
 
