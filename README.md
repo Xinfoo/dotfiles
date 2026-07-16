@@ -128,7 +128,8 @@ These are some graphical tools on the desktop.
 - thunar-media-tags-plugin
 
 **Terminal**
-- alacritty
+- kitty (default)
+- alacritty (optional)
 
 **Icon Theme**
 - papirus-icon-theme
