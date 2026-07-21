@@ -31,11 +31,16 @@ hl.gesture({
 -- scroll_factor 小于 1 会缩短滚动距离，大于 1 会放大滚动距离。
 -- 更多信息参见 https://wiki.hypr.land/Configuring/Advanced-and-Cool/Devices/
 hl.device({
-    name          = "elan0676:00-04f3:3195-touchpad",
+    name = "elan0676:00-04f3:3195-touchpad",
     scroll_factor = 0.5,
 })
 
 hl.device({
-    name          = "tpps/2-elan-trackpoint",
+    name = "tpps/2-elan-trackpoint",
     scroll_factor = 1.0,
+})
+
+hl.device({
+    name = "0-x23-pro-receiver",
+    accel_profile = "flat",
 })
