@@ -12,15 +12,8 @@ if [ -z "$status" ]; then
   exit 0
 fi
 
-artist=$(playerctl metadata artist 2>/dev/null || true)
-title=$(playerctl metadata title 2>/dev/null || true)
-text="${artist:+$artist - }$title"
-escaped_text=$(printf '%s' "$text" | sed 's/\\/\\\\/g; s/"/\\"/g')
-
-if [ -z "$text" ]; then
-  printf '{"text":""}\n'
-elif [ "$status" = "Playing" ]; then
-  printf '{"text":" %s","class":"playing"}\n' "$escaped_text"
-else
-  printf '{"text":" %s","class":"paused"}\n' "$escaped_text"
-fi
+case "$status" in
+  Playing) printf '{"text":""}\n' ;;
+  Paused)  printf '{"text":""}\n' ;;
+  *)       printf '{"text":""}\n' ;;
+esac

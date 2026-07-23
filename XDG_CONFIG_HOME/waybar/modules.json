@@ -136,8 +136,6 @@
     "return-type": "json",
     "interval": 2,
     "format": "{text}",
-    "max-length": 64,
-    "escape": true,
     "hide-empty-text": true,
     "on-click": "playerctl play-pause",
     "on-click-right": "playerctl next",
