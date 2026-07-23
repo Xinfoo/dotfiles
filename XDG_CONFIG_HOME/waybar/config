@@ -23,13 +23,13 @@
   ],
 
   "modules-right": [
+    "network",
     "cpu",
     "memory",
     "temperature",
+    "battery",
     "backlight",
     "pulseaudio",
-    "network",
-    "battery",
     "custom/cliphist",
     "tray",
     "clock",
