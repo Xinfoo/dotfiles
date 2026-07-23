@@ -13,16 +13,6 @@ window#waybar {
   color: @foreground;
 }
 
-#left,
-#center,
-.modules-right {
-  padding: 0 6px;
-}
-
-#center {
-  margin-right: 6px;
-}
-
 tooltip {
   background: @background-solid;
   border: 1px solid @border;

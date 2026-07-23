@@ -2,7 +2,6 @@
   "layer": "top",
   "position": "top",
   "height": 34,
-  "spacing": 6,
   "no-center": true,
 
   "include": [
