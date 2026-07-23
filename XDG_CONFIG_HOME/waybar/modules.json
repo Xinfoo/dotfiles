@@ -62,10 +62,11 @@
   },
 
   "network": {
-    "format-wifi": "󰖩 {signalStrength}%",
+    "interval": 2,
+    "format-wifi": "󰕒 {bandwidthUpBytes} 󰇚 {bandwidthDownBytes}",
     "format-ethernet": "󰈀 {ifname}",
     "format-disconnected": "󰖪 offline",
-    "tooltip-format-wifi": "{ifname} @ {essid}\nIP: {ipaddr}\nUp: {bandwidthUpBits}\nDown: {bandwidthDownBits}",
+    "tooltip-format-wifi": "{ifname} @ {essid}\nIP: {ipaddr}",
     "tooltip-format-ethernet": "{ifname}\nIP: {ipaddr}\nUp: {bandwidthUpBits}\nDown: {bandwidthDownBits}",
     "tooltip-format-disconnected": "Disconnected",
     "on-click": "nm-connection-editor"
