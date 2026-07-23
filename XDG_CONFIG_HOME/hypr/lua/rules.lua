@@ -55,6 +55,15 @@ hl.window_rule({
 -- })
 -- overlayLayerRule:set_enabled(false)
 
+-- 为 Waybar 的半透明背景启用毛玻璃效果
+hl.layer_rule({
+    name  = "blur-waybar",
+    match = { namespace = "^waybar$" },
+
+    blur         = true,
+    ignore_alpha = 0.2,
+})
+
 -- Hyprland-run 窗口规则
 hl.window_rule({
     name  = "move-hyprland-run",
