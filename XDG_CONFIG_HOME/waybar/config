@@ -6,21 +6,33 @@
   "margin-left": 10,
   "margin-right": 10,
   "spacing": 6,
+  "no-center": true,
 
   "include": [
     "~/.config/waybar/modules.json"
   ],
 
   "modules-left": [
-    "custom/appmenu",
-    "hyprland/workspaces",
-    "wlr/taskbar"
+    "group/left",
+    "group/center"
   ],
 
-  "modules-center": [
-    "custom/player",
-    "hyprland/window"
-  ],
+  "group/left": {
+    "orientation": "horizontal",
+    "modules": [
+      "custom/appmenu",
+      "hyprland/workspaces",
+      "wlr/taskbar"
+    ]
+  },
+
+  "group/center": {
+    "orientation": "horizontal",
+    "modules": [
+      "custom/player",
+      "hyprland/window"
+    ]
+  },
 
   "modules-right": [
     "network",

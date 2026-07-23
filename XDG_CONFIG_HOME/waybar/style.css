@@ -13,8 +13,8 @@ window#waybar {
   color: @foreground;
 }
 
-.modules-left,
-.modules-center,
+#left,
+#center,
 .modules-right {
   background: @background;
   border: 1px solid @border;
@@ -22,8 +22,14 @@ window#waybar {
   padding: 0 6px;
 }
 
-.modules-center {
-  margin: 0 6px;
+.modules-left {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+#center {
+  margin-right: 6px;
 }
 
 tooltip {
