@@ -9,26 +9,12 @@
   ],
 
   "modules-left": [
-    "group/left",
-    "group/center"
+    "custom/appmenu",
+    "hyprland/workspaces",
+    "wlr/taskbar",
+    "custom/player",
+    "hyprland/window"
   ],
-
-  "group/left": {
-    "orientation": "horizontal",
-    "modules": [
-      "custom/appmenu",
-      "hyprland/workspaces",
-      "wlr/taskbar"
-    ]
-  },
-
-  "group/center": {
-    "orientation": "horizontal",
-    "modules": [
-      "custom/player",
-      "hyprland/window"
-    ]
-  },
 
   "modules-right": [
     "network",
