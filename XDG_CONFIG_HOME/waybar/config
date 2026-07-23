@@ -12,8 +12,8 @@
     "custom/appmenu",
     "hyprland/workspaces",
     "wlr/taskbar",
-    "custom/player",
-    "hyprland/window"
+    "hyprland/window",
+    "custom/player"
   ],
 
   "modules-right": [
