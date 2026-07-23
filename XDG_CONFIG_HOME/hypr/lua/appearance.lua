@@ -8,12 +8,7 @@ hl.config({
         gaps_in  = 0,
         gaps_out = 0,
 
-        border_size = 1,
-
-        col = {
-            active_border   = "rgba(e56532ff)",
-            inactive_border = "rgba(8f817a66)",
-        },
+        border_size = 0,
 
         -- 设为 true 以允许通过点击拖拽边框和间隙来调整窗口大小
         resize_on_border = true,
