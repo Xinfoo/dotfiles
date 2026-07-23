@@ -5,8 +5,8 @@
 -- 参见 https://wiki.hypr.land/Configuring/Basics/Variables/
 hl.config({
     general = {
-        gaps_in  = 2,
-        gaps_out = 10,
+        gaps_in  = 0,
+        gaps_out = 0,
 
         border_size = 1,
 
@@ -25,8 +25,7 @@ hl.config({
     },
 
     decoration = {
-        rounding       = 8,
-        rounding_power = 2,
+        rounding = 0,
 
         -- 调整聚焦窗口与非聚焦窗口的透明度
         active_opacity   = 1.0,
