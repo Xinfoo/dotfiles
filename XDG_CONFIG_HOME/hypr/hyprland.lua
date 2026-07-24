@@ -25,7 +25,7 @@ local browser     = "chromium"
 -- 参见 https://wiki.hypr.land/Configuring/Basics/Autostart/
 hl.on("hyprland.start", function()
     hl.exec_cmd(utils.autostart_cmd("hyprpaper"))
-    hl.exec_cmd(utils.autostart_cmd("~/.config/waybar/launch.sh"))
+    hl.exec_cmd(utils.autostart_cmd("waybar"))
     hl.exec_cmd(utils.autostart_cmd("nm-applet"))
     hl.exec_cmd(utils.autostart_cmd("/usr/lib/hyprpolkitagent/hyprpolkitagent"))
     hl.exec_cmd(utils.autostart_cmd("fcitx5 -d"))

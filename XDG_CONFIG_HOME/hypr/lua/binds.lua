@@ -20,7 +20,6 @@ return function(opts)
     hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("~/.config/wofi/scripts/cliphist.sh"))
     hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
     hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(app_cmd(browser)))
-    hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(app_cmd("~/.config/waybar/launch.sh")))
     hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
     hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- 仅适用于 dwindle 布局
     hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("~/.config/wofi/scripts/screenshot.sh"))
