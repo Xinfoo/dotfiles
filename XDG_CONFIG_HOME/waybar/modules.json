@@ -98,7 +98,6 @@
 
   "backlight": {
     "format": "󰃠 {percent}%",
-    "scroll-step": 5,
     "on-scroll-up": "brightnessctl -e4 -n2 set 5%+",
     "on-scroll-down": "brightnessctl -e4 -n2 set 5%-"
   },
@@ -114,8 +113,7 @@
 
   "temperature": {
     "critical-threshold": 80,
-    "format": "TEMP {temperatureC}℃",
-    "format-critical": "TEMP {temperatureC}℃"
+    "format": "TEMP {temperatureC}℃"
   },
 
   "custom/appmenu": {
