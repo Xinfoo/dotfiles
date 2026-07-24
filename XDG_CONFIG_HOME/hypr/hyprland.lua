@@ -15,6 +15,7 @@ local utils = require("utils")
 local terminal    = "kitty"
 local fileManager = "thunar"
 local menu        = "wofi --show drun"
+local browser     = "chromium"
 
 
 ----------------
@@ -45,6 +46,7 @@ require("lua.binds")({
     terminal    = terminal,
     fileManager = fileManager,
     menu        = menu,
+    browser     = browser,
     app_cmd     = utils.app_cmd,
 })
 require("lua.rules")

@@ -2,6 +2,7 @@ return function(opts)
     local terminal    = opts.terminal
     local fileManager = opts.fileManager
     local menu        = opts.menu
+    local browser     = opts.browser
     local app_cmd     = opts.app_cmd
 
     ------------------
@@ -18,7 +19,7 @@ return function(opts)
     hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
     hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("~/.config/waybar/scripts/cliphist.sh"))
     hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
-    hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(app_cmd("chromium")))
+    hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(app_cmd(browser)))
     hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(app_cmd("~/.config/waybar/launch.sh")))
     hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
     hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- 仅适用于 dwindle 布局
