@@ -119,14 +119,14 @@
   "custom/appmenu": {
     "format": "󰣇",
     "tooltip-format": "Application launcher",
-    "on-click": "~/.config/waybar/scripts/appmenu.sh"
+    "on-click": "~/.config/wofi/scripts/appmenu.sh"
   },
 
   "custom/cliphist": {
     "format": "",
     "tooltip-format": "Clipboard history",
-    "on-click": "~/.config/waybar/scripts/cliphist.sh",
-    "on-click-right": "~/.config/waybar/scripts/cliphist.sh clear"
+    "on-click": "~/.config/wofi/scripts/cliphist.sh",
+    "on-click-right": "~/.config/wofi/scripts/cliphist.sh clear"
   },
 
   "custom/player": {

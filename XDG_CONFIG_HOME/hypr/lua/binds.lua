@@ -17,13 +17,13 @@ return function(opts)
     -- closeWindowBind:set_enabled(false)
     hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
     hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
-    hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("~/.config/waybar/scripts/cliphist.sh"))
+    hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("~/.config/wofi/scripts/cliphist.sh"))
     hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
     hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(app_cmd(browser)))
     hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(app_cmd("~/.config/waybar/launch.sh")))
     hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
     hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- 仅适用于 dwindle 布局
-    hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("~/.config/hypr/scripts/screenshot.sh"))
+    hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("~/.config/wofi/scripts/screenshot.sh"))
 
     -- 使用 mainMod + 方向键移动焦点
     hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))

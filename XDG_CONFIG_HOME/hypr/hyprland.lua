@@ -14,7 +14,7 @@ local utils = require("utils")
 -- 设置你使用的程序
 local terminal    = "kitty"
 local fileManager = "thunar"
-local menu        = "~/.config/waybar/scripts/appmenu.sh"
+local menu        = "~/.config/wofi/scripts/appmenu.sh"
 local browser     = "chromium"
 
 
