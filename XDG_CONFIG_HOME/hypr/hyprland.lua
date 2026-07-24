@@ -14,7 +14,8 @@ local utils = require("utils")
 -- 设置你使用的程序
 local terminal    = "kitty"
 local fileManager = "thunar"
-local menu        = "wofi --show drun"
+local menu        = "~/.config/wofi/scripts/appmenu.sh"
+local browser     = "chromium"
 
 
 ----------------
@@ -23,13 +24,13 @@ local menu        = "wofi --show drun"
 
 -- 参见 https://wiki.hypr.land/Configuring/Basics/Autostart/
 hl.on("hyprland.start", function()
-    hl.exec_cmd(utils.app_cmd("hyprpaper"))
-    hl.exec_cmd(utils.app_cmd("~/.config/waybar/launch.sh"))
-    hl.exec_cmd(utils.app_cmd("nm-applet"))
-    hl.exec_cmd(utils.app_cmd("/usr/lib/hyprpolkitagent/hyprpolkitagent"))
-    hl.exec_cmd(utils.app_cmd("fcitx5 -d"))
-    hl.exec_cmd(utils.app_cmd("wl-paste --type text --watch cliphist store"))
-    hl.exec_cmd(utils.app_cmd("wl-paste --type image --watch cliphist store"))
+    hl.exec_cmd(utils.autostart_cmd("hyprpaper"))
+    hl.exec_cmd(utils.autostart_cmd("waybar"))
+    hl.exec_cmd(utils.autostart_cmd("nm-applet"))
+    hl.exec_cmd(utils.autostart_cmd("/usr/lib/hyprpolkitagent/hyprpolkitagent"))
+    hl.exec_cmd(utils.autostart_cmd("fcitx5 -d"))
+    hl.exec_cmd(utils.autostart_cmd("wl-paste --type text --watch cliphist store"))
+    hl.exec_cmd(utils.autostart_cmd("wl-paste --type image --watch cliphist store"))
 end)
 
 
@@ -45,6 +46,7 @@ require("lua.binds")({
     terminal    = terminal,
     fileManager = fileManager,
     menu        = menu,
+    browser     = browser,
     app_cmd     = utils.app_cmd,
 })
 require("lua.rules")

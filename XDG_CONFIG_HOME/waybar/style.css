@@ -9,27 +9,8 @@
 }
 
 window#waybar {
-  background: transparent;
-  color: @foreground;
-}
-
-#left,
-#center,
-.modules-right {
   background: @background;
-  border: 1px solid @border;
-  border-radius: 8px;
-  padding: 0 6px;
-}
-
-.modules-left {
-  background: transparent;
-  border: none;
-  padding: 0;
-}
-
-#center {
-  margin-right: 6px;
+  color: @foreground;
 }
 
 tooltip {
@@ -92,12 +73,10 @@ window#waybar.empty #window {
 #clock,
 #pulseaudio,
 #network,
-#bluetooth,
 #battery,
 #backlight,
 #cpu,
 #memory,
-#disk,
 #temperature,
 #custom-player {
   margin: 4px 2px;
@@ -116,15 +95,13 @@ window#waybar.empty #window {
 #clock:hover,
 #pulseaudio:hover,
 #network:hover,
-#bluetooth:hover,
 #battery:hover,
 #backlight:hover,
 #custom-player:hover {
   background: @surface-hover;
 }
 
-#battery.warning,
-#temperature.warning {
+#battery.warning {
   color: @warning;
 }
 

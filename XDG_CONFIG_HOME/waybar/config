@@ -2,10 +2,6 @@
   "layer": "top",
   "position": "top",
   "height": 34,
-  "margin-top": 8,
-  "margin-left": 10,
-  "margin-right": 10,
-  "spacing": 6,
   "no-center": true,
 
   "include": [
@@ -13,26 +9,12 @@
   ],
 
   "modules-left": [
-    "group/left",
-    "group/center"
+    "custom/appmenu",
+    "hyprland/workspaces",
+    "wlr/taskbar",
+    "hyprland/window",
+    "custom/player"
   ],
-
-  "group/left": {
-    "orientation": "horizontal",
-    "modules": [
-      "custom/appmenu",
-      "hyprland/workspaces",
-      "wlr/taskbar"
-    ]
-  },
-
-  "group/center": {
-    "orientation": "horizontal",
-    "modules": [
-      "custom/player",
-      "hyprland/window"
-    ]
-  },
 
   "modules-right": [
     "network",

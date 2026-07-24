@@ -5,15 +5,10 @@
 -- 参见 https://wiki.hypr.land/Configuring/Basics/Variables/
 hl.config({
     general = {
-        gaps_in  = 2,
-        gaps_out = 10,
+        gaps_in  = 0,
+        gaps_out = 0,
 
-        border_size = 1,
-
-        col = {
-            active_border   = "rgba(e56532ff)",
-            inactive_border = "rgba(8f817a66)",
-        },
+        border_size = 0,
 
         -- 设为 true 以允许通过点击拖拽边框和间隙来调整窗口大小
         resize_on_border = true,
@@ -25,18 +20,17 @@ hl.config({
     },
 
     decoration = {
-        rounding       = 8,
-        rounding_power = 2,
+        rounding = 0,
 
         -- 调整聚焦窗口与非聚焦窗口的透明度
         active_opacity   = 1.0,
         inactive_opacity = 1.0,
 
+        dim_inactive = true,
+        dim_strength = 0.16,
+
         shadow = {
-            enabled      = true,
-            range        = 10,
-            render_power = 2,
-            color        = 0x99000000,
+            enabled = false,
         },
 
         blur = {
@@ -65,8 +59,8 @@ hl.curve("easy",           { type = "spring", mass = 1, stiffness = 850.8889, da
 hl.animation({ leaf = "global",        enabled = true,  speed = 10,   bezier = "default" })
 hl.animation({ leaf = "border",        enabled = true,  speed = 5.39, bezier = "easeOutQuint" })
 hl.animation({ leaf = "windows",       enabled = true,  speed = 4.79, spring = "easy" })
-hl.animation({ leaf = "windowsIn",     enabled = true,  speed = 4.1,  spring = "easy",         style = "popin 87%" })
-hl.animation({ leaf = "windowsOut",    enabled = true,  speed = 1.49, bezier = "linear",       style = "popin 87%" })
+hl.animation({ leaf = "windowsIn",     enabled = true,  speed = 3.6,  bezier = "easeOutQuint", style = "slide" })
+hl.animation({ leaf = "windowsOut",    enabled = true,  speed = 2.4,  bezier = "linear",       style = "slide" })
 hl.animation({ leaf = "fadeIn",        enabled = true,  speed = 1.73, bezier = "almostLinear" })
 hl.animation({ leaf = "fadeOut",       enabled = true,  speed = 1.46, bezier = "almostLinear" })
 hl.animation({ leaf = "fade",          enabled = true,  speed = 3.03, bezier = "quick" })

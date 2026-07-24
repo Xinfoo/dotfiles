@@ -2,6 +2,7 @@ return function(opts)
     local terminal    = opts.terminal
     local fileManager = opts.fileManager
     local menu        = opts.menu
+    local browser     = opts.browser
     local app_cmd     = opts.app_cmd
 
     ------------------
@@ -11,18 +12,17 @@ return function(opts)
     local mainMod = "SUPER" -- 将 "Windows" 键设为主要修饰键
 
     -- 示例按键绑定，更多信息参见 https://wiki.hypr.land/Configuring/Basics/Binds/
-    hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(terminal))
+    hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(app_cmd(terminal)))
     local closeWindowBind = hl.bind(mainMod .. " + C", hl.dsp.window.close())
     -- closeWindowBind:set_enabled(false)
     hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
-    hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
-    hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("~/.config/waybar/scripts/cliphist.sh"))
+    hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(app_cmd(fileManager)))
+    hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("~/.config/wofi/scripts/cliphist.sh"))
     hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
-    hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(app_cmd("chromium")))
-    hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(app_cmd("~/.config/waybar/launch.sh")))
+    hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(app_cmd(browser)))
     hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
     hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- 仅适用于 dwindle 布局
-    hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("~/.config/hypr/scripts/screenshot.sh"))
+    hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("~/.config/wofi/scripts/screenshot.sh"))
 
     -- 使用 mainMod + 方向键移动焦点
     hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))

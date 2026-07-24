@@ -44,3 +44,8 @@ hl.device({
     name = "0-x23-pro-receiver",
     accel_profile = "flat",
 })
+
+hl.device({
+    name = "eweadn-x23-pro",
+    accel_profile = "flat",
+})
