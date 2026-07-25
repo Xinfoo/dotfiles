@@ -7,18 +7,18 @@ if ((EUID == 0)); then
 fi
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-if [[ ! -e "~/dotfiles" ]];then
-    cp -ra "$SCRIPT_DIR" "~/dotfiles"
+if [[ ! -e "$HOME/dotfiles" ]];then
+    cp -ra "$SCRIPT_DIR" "$HOME/dotfiles"
 fi
 
-for config_dir in "~/dotfiles/XDG_CONFIG_HOME/"*; do
-    if [[ -e "~/.config/$(basename "$config_dir")" ]]; then
+for config_dir in "$HOME/dotfiles/XDG_CONFIG_HOME/"*; do
+    if [[ -e "$HOME/.config/$(basename "$config_dir")" ]]; then
         echo "$config_dir already exists, skiping..."
     else
         if [[ -L "$config_dir" ]]; then
             rm -f "$config_dir"
         fi
-        ln -sf "$config_dir" "~/.config/$(basename "$config_dir")"
+        ln -sf "$config_dir" "$HOME/.config/$(basename "$config_dir")"
         echo "The $(basename "$config_dir") configuration has been set."
     fi
 done
