@@ -11,14 +11,14 @@ if [[ ! -e "$HOME/dotfiles" ]];then
     cp -ra "$SCRIPT_DIR" "$HOME/dotfiles"
 fi
 
-for config_dir_name in "$HOME/dotfiles/XDG_CONFIG_HOME/*"; do
-    if [[ -e "$XDG_CONFIG_HOME/$config_dir_name" ]]; then
-        echo "$XDG_CONFIG_HOME/$config_dir_name already exists, skiping..."
+for config_dir in "$HOME/dotfiles/XDG_CONFIG_HOME/"*; do
+    if [[ -e "$config_dir" ]]; then
+        echo "$config_dir already exists, skiping..."
     else
-        if [[ -L "$XDG_CONFIG_HOME/$config_dir_name" ]]; then
-            rm -f "$XDG_CONFIG_HOME/$config_dir_name"
+        if [[ -L "$config_dir" ]]; then
+            rm -f "$config_dir"
         fi
-        ln -sf "$HOME/dotfiles/XDG_CONFIG_HOME/$config_dir_name" "$XDG_CONFIG_HOME/$config_dir_name"
-        echo "The $config_dir_name configuration has been set."
+        ln -sf "$config_dir" "$XDG_CONFIG_HOME/$(basename "$config_dir")"
+        echo "The $(basename "$config_dir") configuration has been set."
     fi
 done
