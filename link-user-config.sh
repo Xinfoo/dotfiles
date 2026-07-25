@@ -12,7 +12,7 @@ if [[ ! -e "$HOME/dotfiles" ]];then
 fi
 
 for config_dir in "$HOME/dotfiles/XDG_CONFIG_HOME/"*; do
-    if [[ -e "$config_dir" ]]; then
+    if [[ -e "$XDG_CONFIG_HOME/$(basename "$config_dir")" ]]; then
         echo "$config_dir already exists, skiping..."
     else
         if [[ -L "$config_dir" ]]; then
