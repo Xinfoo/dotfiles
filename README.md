@@ -68,6 +68,7 @@ Grimblast also uses `hyprpicker`, `wl-clipboard`, and `libnotify`, which are lis
 - noto-fonts-cjk
 - noto-fonts-emoji
 - noto-fonts-extra
+- ttf-sarasa-gothic
 - ttf-jetbrains-mono
 - ttf-nerd-fonts-symbols
 - ttf-nerd-fonts-symbols-mono
