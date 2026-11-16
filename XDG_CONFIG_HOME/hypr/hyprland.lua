@@ -1,6 +1,6 @@
 -- 这是一个 Hyprland Lua 配置文件。
 -- 更多信息请参考 wiki。
--- https://wiki.hypr.land/Configuring/Start/
+-- https://wiki.hypr.land/configuring/
 
 require("monitors")
 
@@ -22,7 +22,7 @@ local browser     = "chromium"
 ---- 自启动 ----
 ----------------
 
--- 参见 https://wiki.hypr.land/Configuring/Basics/Autostart/
+-- 参见 https://wiki.hypr.land/configuring/core/autostart/
 hl.on("hyprland.start", function()
     hl.exec_cmd(utils.autostart_cmd("hyprpaper"))
     hl.exec_cmd(utils.autostart_cmd("waybar"))

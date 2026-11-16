@@ -3,6 +3,6 @@
 ------------------
 
 -- 使用 uwsm 时，环境变量配置文件应在 $XDG_CONFIG_HOME/uwsm/env
--- 参见 https://wiki.hypr.land/Configuring/Advanced-and-Cool/Environment-variables/
+-- 参见 https://wiki.hypr.land/configuring/core/environment-variables/
 -- hl.env("XCURSOR_SIZE", "24")
 -- hl.env("HYPRCURSOR_SIZE", "24")

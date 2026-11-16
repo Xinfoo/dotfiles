@@ -11,7 +11,7 @@ return function(opts)
 
     local mainMod = "SUPER" -- 将 "Windows" 键设为主要修饰键
 
-    -- 示例按键绑定，更多信息参见 https://wiki.hypr.land/Configuring/Basics/Binds/
+    -- 示例按键绑定，更多信息参见 https://wiki.hypr.land/configuring/core/binds/
     hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(app_cmd(terminal)))
     local closeWindowBind = hl.bind(mainMod .. " + C", hl.dsp.window.close())
     -- closeWindowBind:set_enabled(false)

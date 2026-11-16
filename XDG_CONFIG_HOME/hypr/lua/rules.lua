@@ -2,8 +2,8 @@
 ---- 窗口与工作区 ----
 ----------------------
 
--- 参见 https://wiki.hypr.land/Configuring/Basics/Window-Rules/
--- 以及 https://wiki.hypr.land/Configuring/Basics/Workspace-Rules/
+-- 参见 https://wiki.hypr.land/configuring/core/rules/window-rules/
+-- 以及 https://wiki.hypr.land/configuring/core/rules/workspace-rules/
 
 -- "智能间隙" / "仅当只有一个窗口时无间隙"
 -- 如需使用此功能，请取消下面所有行的注释。

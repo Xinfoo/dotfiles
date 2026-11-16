@@ -2,7 +2,7 @@
 ----- 权限 -----
 ----------------
 
--- 参见 https://wiki.hypr.land/Configuring/Advanced-and-Cool/Permissions/
+-- 参见 https://wiki.hypr.land/configuring/core/advanced-configuration/permissions/
 -- 请注意，此处的权限更改需要重启 Hyprland 才能生效，出于安全原因不会即时应用
 
 -- hl.config({
