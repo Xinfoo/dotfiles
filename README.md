@@ -55,10 +55,6 @@ Intel:
 
 **Screenshot & Image Viewer**
 - grimblast
-- grim
-- slurp
-- jq
-- gimp
 - swayimg
 
 Grimblast also uses `hyprpicker`, `wl-clipboard`, and `libnotify`, which are listed elsewhere in this section.
@@ -75,7 +71,6 @@ Grimblast also uses `hyprpicker`, `wl-clipboard`, and `libnotify`, which are lis
 
 **Session & Login Manager**
 - uwsm
-- libnewt
 - greetd
 - greetd-regreet
 
@@ -89,11 +84,11 @@ These are some graphical tools on the desktop.
 - hyprpaper
 - hyprpicker
 - hyprshutdown
-- hyprland-qt-support
 
 **Input Method**
 - fcitx5-im
 - fcitx5-chinese-addons
+- fcitx5-material-color
 
 **Waybar and its Dependent Components**
 - waybar
@@ -105,7 +100,6 @@ These are some graphical tools on the desktop.
 - pavucontrol
 - network-manager-applet
 - blueman
-- lm_sensors
 
 **Notification Tool**
 - mako
@@ -116,6 +110,8 @@ These are some graphical tools on the desktop.
 - qt6-wayland
 - qt5ct
 - qt6ct
+- kvantum
+- kvantum-qt5
 
 **File Manager**
 - thunar
@@ -132,5 +128,7 @@ These are some graphical tools on the desktop.
 - kitty (default)
 - alacritty (optional)
 
-**Icon Theme**
+**Theme**
 - papirus-icon-theme
+- kvantum-theme-materia
+- materia-gtk-theme
