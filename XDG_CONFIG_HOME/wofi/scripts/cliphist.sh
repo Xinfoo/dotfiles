@@ -15,7 +15,7 @@ case "${1:-pick}" in
 
       if command -v hyprctl >/dev/null 2>&1; then
         sleep 0.15
-        hyprctl -q dispatch sendshortcut CTRL,V,activewindow >/dev/null 2>&1 || true
+        hyprctl -q dispatch 'hl.dsp.send_shortcut({ mods = "CTRL", key = "V", window = "activewindow" })' >/dev/null 2>&1 || true
       fi
     else
       notify-send "Clipboard" "Install wofi to browse cliphist"

@@ -9,4 +9,4 @@ if command -v hyprshutdown >/dev/null 2>&1; then
   exec hyprshutdown
 fi
 
-exec hyprctl dispatch exit
+exec hyprctl dispatch 'hl.dsp.exit()'
